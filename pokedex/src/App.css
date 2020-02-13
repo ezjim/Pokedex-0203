@@ -53,17 +53,17 @@ header, main {
 }
 
 header {
-  display: flex;
+  display: inline-block;
   align-items: center;
+  margin-left: 40%; 
   justify-content: center;
-  width: 440px;
-  margin-left: 40%;
+  /* width: 440px;
   background-color: white;
-  border-bottom: 1px solid rgb(230, 39, 39);
+  border-bottom: 1px solid rgb(230, 39, 39); */
 }
 
 h1 {
-  margin: 0 20px;
+  
   flex-grow: 1;
 }
 

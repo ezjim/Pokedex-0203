@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 export default class PokeItem extends Component {
+
     render() {
+        
         return (
                 <li className="pokemon-item">
                     <h2>{this.props.pokemon.pokemon}</h2>
