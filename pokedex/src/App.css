@@ -44,15 +44,6 @@ body {
   line-height: 1.5em;
 }
 
-h1 {
-  font-size: 2em;
-}
-
-h1, h2 {
-  font-family: 'Oswald';
-  font-weight: bold;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -64,8 +55,10 @@ header, main {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background: white;
+  justify-content: center;
+  width: 440px;
+  margin-left: 40%;
+  background-color: white;
   border-bottom: 1px solid rgb(230, 39, 39);
 }
 
@@ -74,39 +67,38 @@ h1 {
   flex-grow: 1;
 }
 
-.options {
-  padding: 10px 0;
-}
 
 section {
+  display: inline;
+  justify-content: center;
   margin: 20px auto;
-  width: 90%;
   min-width: 650px;
 }
 
 
-/* .pokemon-list {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-/* .pokemon- li {
-  display: flex;
-  flex-direction: wrap;
+.img{
+  height: 250px;
+}
+.pokemon-item  {
+  
+  display: inline-block;
+  /* flex-direction: wrap; */
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-  height: 200px;
-  width: 200px;
-  min-width: 200px;
-  border: 1px solid #aaa;
-  background-color: white;
-  margin-top: 0px;
+  text-transform: uppercase;
+  text-shadow: black 1px ;
+  height: 500px;
+  width: 250px;
+  min-width: 300px;
+  border: 1px solid rgb(240, 24, 24);
+  background-color: rgb(255, 253, 220);
+  margin-top: 50px;
   margin-right: 5px;
   margin-bottom: 5px;
-  margin-left: 0px;
-  padding: 5px;
-} */
+  margin-left: 10px;
+  padding: 0px;
+}
 /* 
 .cats li h2 {
   font-size: 1.5em;
