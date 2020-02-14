@@ -7,7 +7,7 @@ import SearchOptions from './SearchOptions.js'
 import request from 'superagent'; 
 import getPokemon from './getPokemon.js';
 // import Search from './Search'
-import Paging from "./Paging.js";
+// import Paging from "./Paging.js";
 
 export default class App extends Component {
   
@@ -45,7 +45,7 @@ export default class App extends Component {
         <ul> 
         <PokeList pokemon={this.state.pokemon} />
         </ul> 
-        <Paging totalResults={totalResults} />
+        {/* <Paging /> */}
     </main>
 
     
