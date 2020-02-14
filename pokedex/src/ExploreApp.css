@@ -1,0 +1,82 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(169, 250, 223);
+    margin: 0;
+    line-height: 1.5em;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  header, main {
+    padding: 10px;
+  }
+  
+  header {
+    display: inline-block;
+    align-items: center;
+    margin-left: 40%; 
+    justify-content: center;
+    /* width: 440px;
+    background-color: white;
+    border-bottom: 1px solid rgb(230, 39, 39); */
+  }
+  
+  h1 {
+    
+    flex-grow: 1;
+  }
+  
+  
+  section {
+    display: inline;
+    justify-content: center;
+    margin: 20px auto;
+    min-width: 650px;
+  }
+  
+  
+  .img{
+    height: 250px;
+  }
+  .pokemon-item  {
+    
+    display: inline-block;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: black 1px ;
+    height: 500px;
+    width: 250px;
+    min-width: 300px;
+    border: 1px solid rgb(240, 24, 24);
+    background-color: rgb(255, 245, 189);
+    margin-top: 50px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding: 0px;
+  }
