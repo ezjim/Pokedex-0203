@@ -1,5 +1,5 @@
 
-const URL = "https://alchemy-pokedex.herokuapp.com/api/pokedex/5cef3501ef6005a77cd4fd33"
+    const URL = "https://alchemy-pokedex.herokuapp.com/api/pokedex?"
   export default async function getPokemon() {
       //get rid of the first char of the ######
       let queryString = window.location.hash.slice(1);
@@ -11,11 +11,11 @@ const URL = "https://alchemy-pokedex.herokuapp.com/api/pokedex/5cef3501ef6005a77
       const response = await fetch(url);
       const data = await response.json();
       
-      if (data.Response === "False") {
-          return {
-              Search: [],
-              totalResults: 0
-            };
-        }
+    //   if (data.Response === "False") {
+    //       return {
+    //           Search: [],
+    //           totalResults: 0
+    //         };
+    //     }
         return data;
   }

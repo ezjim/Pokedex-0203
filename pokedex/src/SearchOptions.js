@@ -1,3 +1,4 @@
+                        // CODE SAMPLE////////////////////////
 import React, { Component } from 'react';
 
 export default class SearchOptions extends Component {
@@ -58,9 +59,7 @@ export default class SearchOptions extends Component {
                 <p>
                     <button>Search</button>
                 </p>
-                </form>   
-              
-
+                </form>              
          );
     }
 }

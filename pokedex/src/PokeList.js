@@ -1,6 +1,61 @@
 
 import React, { Component } from 'react';
 import PokeItem from './PokeItem.js';
+
+export default class PokeList extends Component {
+    render() {
+        const { pokemon } = this.props;
+        const pokemonItems = pokemon.map(pokemon => <PokeItem pokemon={pokemon} />);
+// Map is undefined and it is because one of these VARS IS FKED UP  Or i am not calling something correctly
+            return (
+            
+            <main>  
+                <section className="pokemon-list">
+                    <ul>                   
+                        {pokemonItems}
+                    </ul>
+                </section>
+            </main>
+        )
+    }
+}
+     
+
+
+
+//     // const PokeList = pokemonData.map(item => {
+    //     const  pokemonData  = this.props.i dont kow if im doing this right.map(pokemon => <PokeItem pokemon={pokemon} key={shortid.generate()}></PokeItem>)
+
+
+             
+                            //this is your original code//+++++++++++++++++
+                // import React, { Component } from 'react';
+// import PokeItem from './PokeItem.js';
+
+
+// export default class PokeList extends Component {
+    //     render() {
+
+        //         const pokemonData = this.props.pokemon;
+        //         const PokeList = pokemonData.map(item => {
+            //             return <PokeItem pokemon={item} key={item.name} />
+
+            //         })
+            
+            //         return (
+                //             <main>
+               
+                //                 <section className="pokemon-list">
+                //                     <ul>
+//                         {PokeList}
+//                     </ul>
+//                 </section>
+//             </main>
+//         )
+//     }
+// }
+
+
 // import shortid from 'shortid'  figure it out 
 
 
@@ -19,58 +74,4 @@ import PokeItem from './PokeItem.js';
 // const { pokemonData } = this.props.pokemon;
 // const PokeList = pokemonData.map(item => {
 //     return <PokeItem pokemon={item} key={item.name} />
-
-export default class PokeList extends Component {
-    render() {
-    //     const  pokemonData  = this.props.i dont kow if im doing this right.map(pokemon => <PokeItem pokemon={pokemon} key={shortid.generate()}></PokeItem>)
-    //     // const PokeList = pokemonData.map(item => {
-        const pokemonData  = this.props.pokemon;
-        const PokeList = pokemonData.map(item =>
-            { return <PokeItem pokemon={item} key={item.name} />
-             
-       
-        });
-
-        return (
-            
-            <main>  
-                <section className="pokemon-list">
-                    <ul>                   
-                        {PokeList}
-                    </ul>
-                </section>
-            </main>
-        )
-    }
-}
-
-
-                //this is your original code//
-// import React, { Component } from 'react';
-// import PokeItem from './PokeItem.js';
-
-
-// export default class PokeList extends Component {
-//     render() {
-
-//         const pokemonData = this.props.pokemon;
-//         const PokeList = pokemonData.map(item => {
-//             return <PokeItem pokemon={item} key={item.name} />
-
-//         })
-
-//         return (
-//             <main>
-               
-//                 <section className="pokemon-list">
-//                     <ul>
-//                         {PokeList}
-//                     </ul>
-//                 </section>
-//             </main>
-//         )
-//     }
-// }
-
-
 
