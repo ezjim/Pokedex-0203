@@ -9,6 +9,10 @@ import getPokemon from './getPokemon.js';
 // import Search from './Search'
 // import Paging from "./Paging.js";
 
+// need to add paging and total results of pages
+
+
+
 export default class App extends Component {
   
   state = { pokemon: [] };
@@ -129,7 +133,7 @@ export default class App extends Component {
   
   
   
-             {/* <Paging totalResults={totalResults} /> */}
+            //  {/* <Paging totalResults={totalResults} /> */}
   
   //         </main>
   
